@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		0E486BB124463EA4006A9751 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E486BB024463EA4006A9751 /* Drink.swift */; };
 		0E486BB32446413D006A9751 /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E486BB22446413D006A9751 /* FirebaseReference.swift */; };
+		0E486BB524464273006A9751 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E486BB424464273006A9751 /* Constants.swift */; };
 		0E6FAEB924463667003E0146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAEB824463667003E0146 /* AppDelegate.swift */; };
 		0E6FAEBB24463667003E0146 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAEBA24463667003E0146 /* SceneDelegate.swift */; };
-		0E6FAEBD24463667003E0146 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAEBC24463667003E0146 /* ContentView.swift */; };
+		0E6FAEBD24463667003E0146 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAEBC24463667003E0146 /* HomeView.swift */; };
 		0E6FAEBF2446366A003E0146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E6FAEBE2446366A003E0146 /* Assets.xcassets */; };
 		0E6FAEC22446366A003E0146 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E6FAEC12446366A003E0146 /* Preview Assets.xcassets */; };
 		0E6FAEC52446366A003E0146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E6FAEC32446366A003E0146 /* LaunchScreen.storyboard */; };
@@ -22,10 +23,11 @@
 /* Begin PBXFileReference section */
 		0E486BB024463EA4006A9751 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		0E486BB22446413D006A9751 /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
+		0E486BB424464273006A9751 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0E6FAEB524463667003E0146 /* iCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6FAEB824463667003E0146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E6FAEBA24463667003E0146 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E6FAEBC24463667003E0146 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0E6FAEBC24463667003E0146 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0E6FAEBE2446366A003E0146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E6FAEC12446366A003E0146 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E6FAEC42446366A003E0146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +50,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E486BB624464E7E006A9751 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0E486BB22446413D006A9751 /* FirebaseReference.swift */,
+				0E486BB424464273006A9751 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0E486BB724464E8B006A9751 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E486BB024463EA4006A9751 /* Drink.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0E6FAEAC24463667003E0146 = {
 			isa = PBXGroup;
 			children = (
@@ -71,9 +90,9 @@
 			children = (
 				0E6FAEB824463667003E0146 /* AppDelegate.swift */,
 				0E6FAEBA24463667003E0146 /* SceneDelegate.swift */,
-				0E6FAEBC24463667003E0146 /* ContentView.swift */,
-				0E486BB024463EA4006A9751 /* Drink.swift */,
-				0E486BB22446413D006A9751 /* FirebaseReference.swift */,
+				0E6FAEBC24463667003E0146 /* HomeView.swift */,
+				0E486BB724464E8B006A9751 /* Model */,
+				0E486BB624464E7E006A9751 /* Helpers */,
 				0E6FAEBE2446366A003E0146 /* Assets.xcassets */,
 				0E6FAEC32446366A003E0146 /* LaunchScreen.storyboard */,
 				0E6FAEC62446366A003E0146 /* Info.plist */,
@@ -228,7 +247,8 @@
 				0E6FAEB924463667003E0146 /* AppDelegate.swift in Sources */,
 				0E6FAEBB24463667003E0146 /* SceneDelegate.swift in Sources */,
 				0E486BB124463EA4006A9751 /* Drink.swift in Sources */,
-				0E6FAEBD24463667003E0146 /* ContentView.swift in Sources */,
+				0E6FAEBD24463667003E0146 /* HomeView.swift in Sources */,
+				0E486BB524464273006A9751 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
