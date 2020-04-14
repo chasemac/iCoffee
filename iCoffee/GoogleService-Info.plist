@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1080087501636-34l7tn55cbsjunga03t6m3ctck90kjfl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1080087501636-34l7tn55cbsjunga03t6m3ctck90kjfl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDM9sD_nrpdK11u9LZMbAEX-56j1Im7GJs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1080087501636</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>bio.chase.iCoffee</string>
+	<key>PROJECT_ID</key>
+	<string>icoffee-d0169</string>
+	<key>STORAGE_BUCKET</key>
+	<string>icoffee-d0169.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1080087501636:ios:31a406ba05bd5f4cdf5511</string>
+	<key>DATABASE_URL</key>
+	<string>https://icoffee-d0169.firebaseio.com</string>
+</dict>
+</plist>
