@@ -45,7 +45,16 @@ struct HomeView: View {
                     Image("basket")
                 })
                     .sheet(isPresented: $showingBasket) {
-                        OrderBasketView()
+                        
+                        if FUser.currentUser() != nil && FUser.currentUser()!.onBoarding {
+                            OrderBasketView()
+
+                        } else if FUser.currentUser() != nil {
+                            FinishRegistrationView()
+                        } else {
+                            LoginView()
+                        }
+                        
                 }
             )
         }

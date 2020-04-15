@@ -21,6 +21,8 @@
 		0E486BCA2447868A006A9751 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E486BC92447868A006A9751 /* CheckoutView.swift */; };
 		0E486BCC24478E96006A9751 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E486BCB24478E96006A9751 /* Order.swift */; };
 		0E486BCE24479ACA006A9751 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E486BCD24479ACA006A9751 /* LoginView.swift */; };
+		0E486BD02447B117006A9751 /* FinishRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E486BCF2447B117006A9751 /* FinishRegistrationView.swift */; };
+		0E486BD22447B6DF006A9751 /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E486BD12447B6DF006A9751 /* FUser.swift */; };
 		0E6FAEB924463667003E0146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAEB824463667003E0146 /* AppDelegate.swift */; };
 		0E6FAEBB24463667003E0146 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAEBA24463667003E0146 /* SceneDelegate.swift */; };
 		0E6FAEBD24463667003E0146 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAEBC24463667003E0146 /* HomeView.swift */; };
@@ -46,6 +48,8 @@
 		0E486BC92447868A006A9751 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		0E486BCB24478E96006A9751 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		0E486BCD24479ACA006A9751 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0E486BCF2447B117006A9751 /* FinishRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRegistrationView.swift; sourceTree = "<group>"; };
+		0E486BD12447B6DF006A9751 /* FUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
 		0E6FAEB524463667003E0146 /* iCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6FAEB824463667003E0146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E6FAEBA24463667003E0146 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 				0E486BB024463EA4006A9751 /* Drink.swift */,
 				0E486BC12446B63A006A9751 /* OrderBasket.swift */,
 				0E486BCB24478E96006A9751 /* Order.swift */,
+				0E486BD12447B6DF006A9751 /* FUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				0E486BC52446C6D4006A9751 /* OrderBasketView.swift */,
 				0E486BBA2446570C006A9751 /* DrinkItem.swift */,
 				0E486BCD24479ACA006A9751 /* LoginView.swift */,
+				0E486BCF2447B117006A9751 /* FinishRegistrationView.swift */,
 				0E486BBE24466117006A9751 /* Firebase Listeners */,
 				0E486BB724464E8B006A9751 /* Model */,
 				0E486BB624464E7E006A9751 /* Helpers */,
@@ -290,11 +296,13 @@
 				0E486BCA2447868A006A9751 /* CheckoutView.swift in Sources */,
 				0E486BBB2446570C006A9751 /* DrinkItem.swift in Sources */,
 				0E486BC42446BA04006A9751 /* BasketListener.swift in Sources */,
+				0E486BD02447B117006A9751 /* FinishRegistrationView.swift in Sources */,
 				0E6FAEB924463667003E0146 /* AppDelegate.swift in Sources */,
 				0E486BC62446C6D4006A9751 /* OrderBasketView.swift in Sources */,
 				0E486BB9244652BA006A9751 /* DrinkRow.swift in Sources */,
 				0E486BBD24466111006A9751 /* DrinkListener.swift in Sources */,
 				0E486BCE24479ACA006A9751 /* LoginView.swift in Sources */,
+				0E486BD22447B6DF006A9751 /* FUser.swift in Sources */,
 				0E6FAEBB24463667003E0146 /* SceneDelegate.swift in Sources */,
 				0E486BB124463EA4006A9751 /* Drink.swift in Sources */,
 				0E486BC024468864006A9751 /* DrinkDetail.swift in Sources */,

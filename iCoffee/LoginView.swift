@@ -11,7 +11,10 @@ import SwiftUI
 struct LoginView: View {
     
     @State var showingSignup = false
+    @State var showingFinishReg = false
     
+    @Environment(\.presentationMode) var presentationMode
+
     @State var email = ""
     @State var password = ""
     @State var repeatPassword = ""
@@ -81,13 +84,48 @@ struct LoginView: View {
             
             SignUpView(showingSignup: $showingSignup)
         } // end of vstack
+            .sheet(isPresented: $showingFinishReg) {
+                FinishRegistrationView()
+        }
     } // end of body
     
     private func loginUser() {
-        
+        if email != "" && password != "" {
+            FUser.loginUserWidth(email: email, password: password) { (error, isEmailVerified) in
+                if error != nil {
+                    print("error logging in user: ", error!.localizedDescription)
+                    return
+                }
+                if FUser.currentUser() != nil && FUser.currentUser()!.onBoarding {
+                    self.presentationMode.wrappedValue.dismiss()
+                } else {
+                    self.showingFinishReg.toggle()
+                }
+            }
+            
+        }
+
     }
     
     private func signUpUser() {
+        if email != "" && password != "" && repeatPassword != "" {
+            if password == repeatPassword {
+                
+                FUser.registerUserWith(email: self.email, password: self.password) { (error) in
+                    if error != nil {
+                        print("Error registering user: ", error!.localizedDescription)
+                        return
+                    }
+                    print("user has been set up")
+                    //
+                }
+
+            } else {
+                print("Passwords don't match")
+            }
+        } else {
+            print("Email and Password must be set")
+        }
         
     }
     
