@@ -86,7 +86,6 @@ struct OrderButton: View {
         .font(.headline)
         .background(Color.blue)
         .cornerRadius(10)
-        
     }
     
     private func addItemToBasket() {

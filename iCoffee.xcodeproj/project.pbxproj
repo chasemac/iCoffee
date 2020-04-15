@@ -16,6 +16,8 @@
 		0E486BC024468864006A9751 /* DrinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E486BBF24468864006A9751 /* DrinkDetail.swift */; };
 		0E486BC22446B63A006A9751 /* OrderBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E486BC12446B63A006A9751 /* OrderBasket.swift */; };
 		0E486BC42446BA04006A9751 /* BasketListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E486BC32446BA04006A9751 /* BasketListener.swift */; };
+		0E486BC62446C6D4006A9751 /* OrderBasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E486BC52446C6D4006A9751 /* OrderBasketView.swift */; };
+		0E486BC82446C9F0006A9751 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E486BC72446C9F0006A9751 /* Extensions.swift */; };
 		0E6FAEB924463667003E0146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAEB824463667003E0146 /* AppDelegate.swift */; };
 		0E6FAEBB24463667003E0146 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAEBA24463667003E0146 /* SceneDelegate.swift */; };
 		0E6FAEBD24463667003E0146 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FAEBC24463667003E0146 /* HomeView.swift */; };
@@ -36,6 +38,8 @@
 		0E486BBF24468864006A9751 /* DrinkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetail.swift; sourceTree = "<group>"; };
 		0E486BC12446B63A006A9751 /* OrderBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBasket.swift; sourceTree = "<group>"; };
 		0E486BC32446BA04006A9751 /* BasketListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketListener.swift; sourceTree = "<group>"; };
+		0E486BC52446C6D4006A9751 /* OrderBasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBasketView.swift; sourceTree = "<group>"; };
+		0E486BC72446C9F0006A9751 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0E6FAEB524463667003E0146 /* iCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6FAEB824463667003E0146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E6FAEBA24463667003E0146 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			children = (
 				0E486BB22446413D006A9751 /* FirebaseReference.swift */,
 				0E486BB424464273006A9751 /* Constants.swift */,
+				0E486BC72446C9F0006A9751 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 				0E6FAEBC24463667003E0146 /* HomeView.swift */,
 				0E486BB8244652BA006A9751 /* DrinkRow.swift */,
 				0E486BBF24468864006A9751 /* DrinkDetail.swift */,
+				0E486BC52446C6D4006A9751 /* OrderBasketView.swift */,
 				0E486BBA2446570C006A9751 /* DrinkItem.swift */,
 				0E486BBE24466117006A9751 /* Firebase Listeners */,
 				0E486BB724464E8B006A9751 /* Model */,
@@ -274,6 +280,7 @@
 				0E486BBB2446570C006A9751 /* DrinkItem.swift in Sources */,
 				0E486BC42446BA04006A9751 /* BasketListener.swift in Sources */,
 				0E6FAEB924463667003E0146 /* AppDelegate.swift in Sources */,
+				0E486BC62446C6D4006A9751 /* OrderBasketView.swift in Sources */,
 				0E486BB9244652BA006A9751 /* DrinkRow.swift in Sources */,
 				0E486BBD24466111006A9751 /* DrinkListener.swift in Sources */,
 				0E6FAEBB24463667003E0146 /* SceneDelegate.swift in Sources */,
@@ -281,6 +288,7 @@
 				0E486BC024468864006A9751 /* DrinkDetail.swift in Sources */,
 				0E6FAEBD24463667003E0146 /* HomeView.swift in Sources */,
 				0E486BB524464273006A9751 /* Constants.swift in Sources */,
+				0E486BC82446C9F0006A9751 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
