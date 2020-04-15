@@ -19,9 +19,11 @@ struct DrinkRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(self.drinks) { drink in
-                        DrinkItem(drink: drink)
-                        .frame(width: 300)
-                            .padding(.trailing, 30)
+                        NavigationLink(destination: DrinkDetail(drink: drink)) {
+                            DrinkItem(drink: drink)
+                            .frame(width: 300)
+                                .padding(.trailing, 30)
+                        }
                     }
                 }
             }
