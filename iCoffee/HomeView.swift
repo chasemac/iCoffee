@@ -32,8 +32,10 @@ struct HomeView: View {
             .navigationBarTitle(Text("iCoffee"))
             .navigationBarItems(leading:
                 Button(action: {
-                    //code
-                    print("Log out")
+                    
+                    FUser.logOutCurrentUser { (error) in
+                        print("error logging out user: ", error?.localizedDescription)
+                    }
                 }, label: {
                     Text("Log Out")
                 })

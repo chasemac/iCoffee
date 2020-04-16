@@ -14,7 +14,7 @@ struct LoginView: View {
     @State var showingFinishReg = false
     
     @Environment(\.presentationMode) var presentationMode
-
+    
     @State var email = ""
     @State var password = ""
     @State var repeatPassword = ""
@@ -104,7 +104,7 @@ struct LoginView: View {
             }
             
         }
-
+        
     }
     
     private func signUpUser() {
@@ -119,7 +119,7 @@ struct LoginView: View {
                     print("user has been set up")
                     //
                 }
-
+                
             } else {
                 print("Passwords don't match")
             }
@@ -130,7 +130,20 @@ struct LoginView: View {
     }
     
     private func resetPassword() {
-        
+        if email != "" {
+            FUser.resetPassword(email: email) { (error) in
+                if error != nil {
+                    print("error sending reset password : ", error!.localizedDescription)
+                    return
+                }
+                
+                print("please check your email")
+            }
+
+        } else {
+            //notify user
+            print("email is empty")
+        }
     }
 }
 
@@ -158,5 +171,21 @@ struct SignUpView: View {
             } // end of hstack
                 .padding(.top, 25)
         } // end of vstack
+    }
+}
+
+func updateCurrentUser(withValues: [String: Any], completion: @escaping(_ error: Error?) -> Void) {
+    
+    if let dictionary = userDefaults.object(forKey: kCURRENTUSER) {
+        let userObject = (dictionary as! NSDictionary).mutableCopy() as! NSMutableDictionary
+        
+        userObject.setValuesForKeys(withValues)
+        FirebaseReference(.User).document(FUser.currentId()).updateData(withValues) { (error) in
+            
+            completion(error)
+            if error == nil {
+                saveUserLocally(userDictionary: userObject)
+            }
+        }
     }
 }
